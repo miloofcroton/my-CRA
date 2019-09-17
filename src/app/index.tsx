@@ -9,6 +9,16 @@ import 'styled-components/macro';
 
 import globals from './globals';
 
+import Core from '@airbnb/lunar';
+import LunarButton from '../components/Lunar';
+
+Core.initialize({
+  defaultLocale: 'en',
+  defaultTimezone: 'UTC',
+  // logger: logToSentry,
+  name: 'my-CRA',
+});
+
 const App: React.FC = () => {
 
   console.log(globals.BASE);
@@ -65,6 +75,10 @@ const App: React.FC = () => {
             >
               Learn React
             </a>
+
+            <LunarButton/>
+            <LunarButton text={'custom text'} />
+
           </header>
         </div>
       </React.Fragment>
