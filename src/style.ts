@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-/** This is the global style object we set the entire HTML to */
+/** This is the global style object we set the entire HTML to use */
 export const GlobalStyle = createGlobalStyle`
 
     body {

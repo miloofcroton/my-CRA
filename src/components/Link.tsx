@@ -6,7 +6,10 @@ enum Status {
 };
 
 interface LinkProps {
+  /** equivalent to href */
   page?: string,
+
+  /** a default React property */
   children?: React.ReactNode,
   className?: string,
 }
