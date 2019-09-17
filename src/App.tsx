@@ -7,6 +7,7 @@ import { mainTheme } from './theme';
 
 import 'styled-components/macro';
 
+
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={mainTheme}>
