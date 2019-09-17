@@ -4,12 +4,23 @@ import Link from '../Link';
 
 describe('Link', () => {
   it('Renders link to Google', () => {
-    const link = shallow(<Link href="http://google.com">Link to Google</Link>);
+    const link = shallow(
+      <Link
+        page="http://google.com"
+      >
+        Link to Google
+      </Link>);
     expect(link).toMatchSnapshot();
   });
 
   it('Renders link to Google with classname', () => {
-    const link = shallow(<Link href="http://google.com" className="my-link-class">Link to Google</Link>);
+    const link = shallow(
+      <Link
+        page="http://google.com"
+        className="my-link-class"
+      >
+        Link to Google
+      </Link>);
     expect(link).toMatchSnapshot();
   });
 });

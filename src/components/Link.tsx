@@ -7,7 +7,8 @@ enum Status {
 
 interface LinkProps {
   page?: string,
-  children?: React.ReactChildren,
+  children?: React.ReactNode,
+  className?: string,
 }
 
 interface LinkState {
