@@ -7,7 +7,12 @@ import { ThemeProvider } from 'styled-components';
 
 import 'styled-components/macro';
 
+import globals from './globals';
+
 const App: React.FC = () => {
+
+  console.log(globals.BASE);
+
   return (
     <ThemeProvider theme={mainTheme}>
       <React.Fragment>
