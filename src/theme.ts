@@ -2,6 +2,7 @@ import { DefaultTheme } from 'styled-components';
 // import theme from 'styled-theming';
 // const background = require('../../../assets/images/background/red.jpg');
 
+
 export const mainTheme: DefaultTheme = {
   // mode: 'dark',
   primaryColor: '#61dafb',
