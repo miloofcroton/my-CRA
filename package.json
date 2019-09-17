@@ -1,6 +1,33 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "description": "CRA starter",
+  "keywords": [
+    "Typescript",
+    "React",
+    "styled-components"
+  ],
+  "license": "MIT",
+  "author": "Jack Toumey",
+  "homepage": "https://github.com/miloofcroton/my-CRA#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/miloofcroton/my-CRA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miloofcroton/my-CRA/issues"
+  },
+  "engines": {
+    "node": ">= 11.10.1"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^4.1.19",
+    "customize-cra": "^0.7.0",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
+    "react-app-rewired": "^2.1.3"
+  },
   "dependencies": {
     "@types/jest": "24.0.18",
     "@types/node": "12.7.5",
@@ -14,11 +41,29 @@
   },
   "scripts": {
     "test:watch": "react-app-rewired test",
-    "test": "react-app-rewired test --no-watch",
+    "test": "react-app-rewired test --no-watch --coverage",
     "start:watch": "react-app-rewired start",
     "start": "serve -s build",
     "build": "react-app-rewired build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "docs:markdown": "typedoc --theme markdown --out ./docs",
+    "docs:raw": "typedoc --out ./raw"
+  },
+  "lint-staged": {
+    ".(tsx?)$": [
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "exit 0"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,11 +84,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/styled-components": "^4.1.19",
-    "customize-cra": "^0.7.0",
-    "prettier": "^1.18.2",
-    "react-app-rewired": "^2.1.3"
   }
 }
