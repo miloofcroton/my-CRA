@@ -15,6 +15,7 @@ const webpack = require('webpack');
 //   return config
 // }
 
+// eslint-disable-next-line quotes
 const BASE_URL = "'http://test.com'";
 
 module.exports = override(
