@@ -1,16 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+
 import * as serviceWorker from './serviceWorker';
 
-import Core from '@airbnb/lunar';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as _lunar from './app/style/lunar';
 
-Core.initialize({
-  defaultLocale: 'en',
-  defaultTimezone: 'UTC',
-  // logger: logToSentry,
-  name: 'my-CRA',
-});
+import App from './app';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

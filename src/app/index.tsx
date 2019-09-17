@@ -1,23 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { ThemeProvider } from 'styled-components';
+import 'styled-components/macro';
 
 import { GlobalStyle } from './style/globals';
 import { mainTheme } from './style/theme';
-import { ThemeProvider } from 'styled-components';
 
-import 'styled-components/macro';
+
 
 import globals from './globals';
 
-import Core from '@airbnb/lunar';
+import logo from './logo.svg';
+
 import LunarButton from '../components/Lunar';
 
-Core.initialize({
-  defaultLocale: 'en',
-  defaultTimezone: 'UTC',
-  // logger: logToSentry,
-  name: 'my-CRA',
-});
 
 const App: React.FC = () => {
 
