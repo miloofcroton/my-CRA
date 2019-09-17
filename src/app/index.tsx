@@ -1,12 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 
-import { GlobalStyle } from './style';
+import { GlobalStyle } from './style/globals';
+import { mainTheme } from './style/theme';
 import { ThemeProvider } from 'styled-components';
-import { mainTheme } from './theme';
 
 import 'styled-components/macro';
-
 
 const App: React.FC = () => {
   return (

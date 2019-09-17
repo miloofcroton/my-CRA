@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import { render } from '@testing-library/react';
 
-import App from './App';
+import App from './index';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
