@@ -20,6 +20,18 @@
   "engines": {
     "node": ">= 11.10.1"
   },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@storybook/react": "^5.2.0",
     "@testing-library/jest-dom": "^4.1.0",
@@ -70,24 +82,9 @@
     "docs:raw": "typedoc --out ./docs",
     "docs:clean": "rimraf ./docs"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "babelMacros": {
     "styledComponents": {
       "pure": true
     }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
