@@ -5,7 +5,6 @@ enum Status {
   normal = 'normal',
 };
 
-
 interface LinkProps {
   /** equivalent to href */
   page?: string,
