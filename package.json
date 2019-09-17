@@ -70,18 +70,6 @@
     "docs:raw": "typedoc --out ./docs",
     "docs:clean": "rimraf ./docs"
   },
-  "lint-staged": {
-    ".(tsx?)$": [
-      "yarn lint",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "exit 0"
-    }
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
