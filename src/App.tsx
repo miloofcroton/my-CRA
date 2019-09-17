@@ -65,6 +65,6 @@ const App: React.FC = () => {
       </React.Fragment>
     </ThemeProvider>
   );
-}
+};
 
 export default App;
