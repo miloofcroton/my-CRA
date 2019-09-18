@@ -1,4 +1,4 @@
-import Core from '@airbnb/lunar';
+import Core from '@airbnb/lunar/lib';
 
 Core.initialize({
   defaultLocale: 'en',
