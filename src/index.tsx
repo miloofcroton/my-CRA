@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 
 import * as serviceWorker from './serviceWorker';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import * as _lunar from './app/style/lunar';
 
 import App from './app';
 

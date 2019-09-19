@@ -2,7 +2,6 @@ import React from 'react';
 
 import Button from '@airbnb/lunar/lib/components/Button';
 
-
 export interface ILunarButtonProps {
   text?: string,
 }
